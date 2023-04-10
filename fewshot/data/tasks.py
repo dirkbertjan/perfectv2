@@ -129,8 +129,9 @@ class AutoTask:
                 cache_dir=cache_dir, 
                 data_dir=data_dir)
         raise ValueError(
-            "Unrecognized task {} for AutoTask Model: {}.\n"
+            "Unrecognized task {} for AutoTask Model.\n"
             "Task name should be one of {}.".format(
-                ", ".join(c for c in TASK_MAPPING.keys())
+                task, ", ".join(c for c in TASK_MAPPING.keys())
             )
         )
+
