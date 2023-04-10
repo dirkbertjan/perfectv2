@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+fewshot.egg-info/PKG-INFO
+fewshot.egg-info/SOURCES.txt
+fewshot.egg-info/dependency_links.txt
+fewshot.egg-info/top_level.txt

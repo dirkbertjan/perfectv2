@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: fewshot
+Version: 0.0.1
+Summary: PERFECT: Prompt-free and Efficient Few-shot Learning with Language Models
+Author: Rabeeh Karimi Mahabadi
+License: MIT License
+Keywords: nlp machinelearning
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+License-File: LICENSE
