@@ -121,17 +121,13 @@ TASK_MAPPING = OrderedDict(
 
 class AutoTask:
     @classmethod
-    def get(self, task, data_seed, num_samples, cache_dir, data_dir=None):
-        if task in TASK_MAPPING:
-            return TASK_MAPPING[task](
-                data_seed=data_seed, 
-                num_samples=num_samples, 
-                cache_dir=cache_dir, 
-                data_dir=data_dir)
-        raise ValueError(
-            "Unrecognized task {} for AutoTask Model.\n"
-            "Task name should be one of {}.".format(
-                task, ", ".join(c for c in TASK_MAPPING.keys())
+    def get(cls, task, data_seed=None, num_samples=None, cache_dir=None, data_dir=None):
+        if task == "mftc":
+            return MFTC(data_seed=data_seed, num_samples=num_samples, cache_dir=cache_dir, data_dir=data_dir)
+        else:
+            raise ValueError(
+                f"Unrecognized task '{task}' for AutoTask Model.\n"
+                f"Task name should be 'mftc'."
             )
-        )
+
 
